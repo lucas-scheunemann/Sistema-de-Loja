@@ -1,0 +1,14 @@
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Loja.UI.csprojAssemblyReference.cache
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.MDIParent1.resources
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.Properties.Resources.resources
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Loja.UI.csproj.GenerateResource.cache
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\bin\Debug\Sistema_Loja.exe.config
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\bin\Debug\Sistema_Loja.exe
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\bin\Debug\Sistema_Loja.pdb
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\bin\Debug\Loja.BLL.dll
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\bin\Debug\Loja.DTO.dll
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\bin\Debug\Loja.BLL.pdb
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\bin\Debug\Loja.DTO.pdb
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Loja.UI.csproj.CopyComplete
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.exe
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.pdb
