@@ -12,3 +12,4 @@ C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\bin
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Loja.UI.csproj.CopyComplete
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.exe
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.pdb
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.CadastrarUsuario.resources
