@@ -15,6 +15,7 @@ namespace Sistema_Loja
 {
 	public partial class CadastrarUsuario : Form
 	{
+		string modo = "";
 		public CadastrarUsuario()
 		{
 			InitializeComponent();
@@ -66,13 +67,56 @@ namespace Sistema_Loja
 			else
 			{
 				cboSituacao.Text = "Inativo";
-				cboPerfil.Text = Convert.ToString(dataGridView1["perfil", sel].Value);
+				
+			}
+
+			switch (Convert.ToString(dataGridView1["perfil", sel].Value))
+			{
+				case "1":
+					cboPerfil.Text = "Admnistrador";
+					break;
+				case "2":
+					cboPerfil.Text = "Operador";
+					break;
+				case "3":
+					cboPerfil.Text = "Gerencial";
+					break;
 			}
 		}
 
 		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
 		{
 
+		}
+
+		private void btnDeletar_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnNovo_Click(object sender, EventArgs e)
+		{
+			/*Chamando método limpar campos que foi criado */
+			limpar_campos();
+
+			/*inserindo data atual automaticamente no txtCadastro */
+			txtCadastro.Text = Convert.ToString(System.DateTime.Now);
+
+			/*apos clicar no botao noovo, modo passa a ser "novo" (incluindo um registro)*/
+			modo = "novo";
+		}
+		/* Criando metodo limpar campos, para que todas as vezes 
+		 * que for necessário limpar nao sera necessario repetir o
+		 * codigo, apenas chamar o metodo */
+		private void limpar_campos()
+		{
+			txtNome.Text = "";
+			txtLogin.Text = "";
+			txtEmail.Text = "";
+			txtSenha.Text = "";
+			txtCadastro.Text = "";
+			cboPerfil.Text = "";
+			cboSituacao.Text = "";
 		}
 	}
 }
