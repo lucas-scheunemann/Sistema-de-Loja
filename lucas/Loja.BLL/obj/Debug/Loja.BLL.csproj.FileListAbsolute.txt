@@ -8,3 +8,4 @@ C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.BLL\obj\Deb
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.BLL\obj\Debug\Loja.BLL.csproj.CopyComplete
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.BLL\obj\Debug\Loja.BLL.dll
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.BLL\obj\Debug\Loja.BLL.pdb
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.BLL\bin\Debug\Loja.DAL.dll.config

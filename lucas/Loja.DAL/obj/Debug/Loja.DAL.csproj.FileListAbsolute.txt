@@ -6,3 +6,4 @@ C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.DAL\obj\Deb
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.DAL\obj\Debug\Loja.DAL.csproj.CopyComplete
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.DAL\obj\Debug\Loja.DAL.dll
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.DAL\obj\Debug\Loja.DAL.pdb
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.DAL\bin\Debug\Loja.DAL.dll.config
