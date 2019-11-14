@@ -233,6 +233,35 @@ namespace Sistema_Loja
 				}
 
 			}
+			if (modo == "deleta")
+			{
+				/*tratamento de erros, exibe msg*/
+				try
+				{
+					/* Objeto USU */
+					usuario_DTO USU = new usuario_DTO();
+					USU.cod_usuario = int.Parse(lblCodigo.Text);
+
+					/*método deleta usuário na classe BLL*/
+					int x = new UsuarioBLL().deletaUsuario(USU);
+					if (x > 0)
+					{
+						MessageBox.Show("Deletado com Sucesso!");
+						lblCodigo.Text = "0";
+					}
+					else
+					{
+						MessageBox.Show("Nada foi alterado!");
+					}
+					/*Recarrega o Grid*/
+					carregaGrid();
+
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show("Erro inesperado" + ex.Message);
+				}
+			}
 			
 		}
 

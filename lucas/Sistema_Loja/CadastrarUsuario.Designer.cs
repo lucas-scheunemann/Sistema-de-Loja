@@ -277,7 +277,7 @@
 			// lblCodigo
 			// 
 			this.lblCodigo.AutoSize = true;
-			this.lblCodigo.Location = new System.Drawing.Point(281, 98);
+			this.lblCodigo.Location = new System.Drawing.Point(272, 98);
 			this.lblCodigo.Name = "lblCodigo";
 			this.lblCodigo.Size = new System.Drawing.Size(13, 13);
 			this.lblCodigo.TabIndex = 22;
