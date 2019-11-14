@@ -27,7 +27,13 @@ namespace Sistema_Loja
 		}
 
 		private void CadastrarUsuario_Load(object sender, EventArgs e)
+		/* método CarregaGrid
+		 * para atualizar os dados do grid,
+		 * basta chamar o método */
 		{
+			carregaGrid();
+		}
+		private void carregaGrid() {
 			try
 			{
 				IList<usuario_DTO> listUsuario_DTO = new List<usuario_DTO>();
@@ -160,6 +166,8 @@ namespace Sistema_Loja
 					{
 						MessageBox.Show("Gravado com Sucesso!");
 					}
+					/*Recarrega o Grid*/
+					carregaGrid();
 				}
 				catch (Exception ex)
 				{
@@ -167,6 +175,11 @@ namespace Sistema_Loja
 				}
 			}
 			modo = "";
+		}
+
+		private void btnEditar_Click(object sender, EventArgs e)
+		{
+			modo = "altera";
 		}
 	}
 }

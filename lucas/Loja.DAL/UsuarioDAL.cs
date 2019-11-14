@@ -95,5 +95,71 @@ namespace Loja.DAL
 				throw ex;
 			}
 		}
+
+		public int editaUsuario(usuario_DTO USU)
+		{
+			try
+			{
+				SqlConnection CON = new SqlConnection();
+				CON.ConnectionString = Properties.Settings.Default.CST;
+				SqlCommand CM = new SqlCommand();
+				CM.CommandType = System.Data.CommandType.Text;
+
+				/*Atencos no nome dos campos que deve ser igual no Banco de dados*/
+				CM.CommandText = "UPDATE tb_usuarios SET perfil=@perfil," +
+					"nome=@nome," + "login=@login," + "email=@email," + "senha=@senha," +
+					"cadastro = @cadastro," + "situacao=@situacao" + "WHERE cod_usuarios=@cod_usuarios;";
+
+				/*parameters ira substituir os valores dentro do campo*/
+				CM.Parameters.Add("perfil", System.Data.SqlDbType.Int).Value = USU.perfil;
+				CM.Parameters.Add("nome", System.Data.SqlDbType.VarChar).Value = USU.nome;
+				CM.Parameters.Add("login", System.Data.SqlDbType.VarChar).Value = USU.login;
+				CM.Parameters.Add("email", System.Data.SqlDbType.VarChar).Value = USU.email;
+				CM.Parameters.Add("senha", System.Data.SqlDbType.VarChar).Value = USU.senha;
+				CM.Parameters.Add("cadastro", System.Data.SqlDbType.DateTime).Value = USU.cadastro;
+				CM.Parameters.Add("situacao", System.Data.SqlDbType.VarChar).Value = USU.situacao;
+				CM.Parameters.Add("cod_usuarios", System.Data.SqlDbType.VarChar).Value = USU.situacao;
+
+				CM.Connection = CON;
+
+				/*abre conexao*/
+				CON.Open();
+				int qtd = CM.ExecuteNonQuery();
+				return qtd;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
+
+		public int deletaUsuario(usuario_DTO USU)
+		{
+			try
+			{
+				/*excluindo dados na tb_usuarios*/
+				SqlConnection CON = new SqlConnection();
+				CON.ConnectionString = Properties.Settings.Default.CST;
+				SqlCommand CM = new SqlCommand();
+				CM.CommandType = System.Data.CommandType.Text;
+				CM.CommandText = "DELETE tb_usuarios WHERE cod_usuario = @cod_usuario;";
+
+				/*tem um unico parametro que sera o codigo do usuario, so existe 1 */
+				CM.Parameters.Add("cod_usuario", System.Data.SqlDbType.Int).Value = USU.cod_usuario;
+
+				CM.Connection = CON;
+
+				CON.Open();
+				int qtd = CM.ExecuteNonQuery();
+
+				/*retorna registros afetados*/
+				return qtd;
+
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
 	}
 }
