@@ -15,7 +15,7 @@ namespace Loja.DTO
 		public string senha { get; set; }
 		public DateTime cadastro { get; set; }
 		public int perfil { get; set; }
-		public String situacao { get; set; }
+		public string situacao { get; set; }
 
 
 

@@ -49,6 +49,9 @@
 			this.btnDeletar = new System.Windows.Forms.Button();
 			this.btnCancelar = new System.Windows.Forms.Button();
 			this.btnConfirmar = new System.Windows.Forms.Button();
+			this.lblModo = new System.Windows.Forms.Label();
+			this.lblCodigo = new System.Windows.Forms.Label();
+			this.label9 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -247,6 +250,7 @@
 			this.btnCancelar.TabIndex = 19;
 			this.btnCancelar.Text = "CANCELAR";
 			this.btnCancelar.UseVisualStyleBackColor = false;
+			this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
 			// 
 			// btnConfirmar
 			// 
@@ -261,11 +265,42 @@
 			this.btnConfirmar.UseVisualStyleBackColor = false;
 			this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
 			// 
+			// lblModo
+			// 
+			this.lblModo.AutoSize = true;
+			this.lblModo.Location = new System.Drawing.Point(329, 9);
+			this.lblModo.Name = "lblModo";
+			this.lblModo.Size = new System.Drawing.Size(46, 13);
+			this.lblModo.TabIndex = 21;
+			this.lblModo.Text = "MODO: ";
+			// 
+			// lblCodigo
+			// 
+			this.lblCodigo.AutoSize = true;
+			this.lblCodigo.Location = new System.Drawing.Point(281, 98);
+			this.lblCodigo.Name = "lblCodigo";
+			this.lblCodigo.Size = new System.Drawing.Size(13, 13);
+			this.lblCodigo.TabIndex = 22;
+			this.lblCodigo.Text = "0";
+			this.lblCodigo.Click += new System.EventHandler(this.lblCodigo_Click);
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Location = new System.Drawing.Point(233, 98);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(42, 13);
+			this.label9.TabIndex = 23;
+			this.label9.Text = "código:";
+			// 
 			// CadastrarUsuario
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(438, 460);
+			this.Controls.Add(this.label9);
+			this.Controls.Add(this.lblCodigo);
+			this.Controls.Add(this.lblModo);
 			this.Controls.Add(this.btnConfirmar);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnDeletar);
@@ -319,5 +354,8 @@
 		private System.Windows.Forms.Button btnDeletar;
 		private System.Windows.Forms.Button btnCancelar;
 		private System.Windows.Forms.Button btnConfirmar;
+		private System.Windows.Forms.Label lblModo;
+		private System.Windows.Forms.Label lblCodigo;
+		private System.Windows.Forms.Label label9;
 	}
 }

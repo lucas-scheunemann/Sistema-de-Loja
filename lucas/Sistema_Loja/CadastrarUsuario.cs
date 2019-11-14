@@ -61,7 +61,7 @@ namespace Sistema_Loja
 			txtEmail.Text = Convert.ToString(dataGridView1["email", sel].Value);
 			txtSenha.Text = Convert.ToString(dataGridView1["senha", sel].Value);
 			txtCadastro.Text = Convert.ToString(dataGridView1["cadastro", sel].Value);
-
+			lblCodigo.Text = Convert.ToString(dataGridView1["cod_usuario", sel].Value);
 			/*Condição se a situação for igual a "A" entao o combobox ficará
 			 * Ativo senao "Inativo"*/
 
@@ -97,7 +97,8 @@ namespace Sistema_Loja
 
 		private void btnDeletar_Click(object sender, EventArgs e)
 		{
-
+			modo = "deleta";
+			lblModo.Text = "MODO: DELETAR";
 		}
 
 		private void btnNovo_Click(object sender, EventArgs e)
@@ -110,6 +111,7 @@ namespace Sistema_Loja
 
 			/*apos clicar no botao noovo, modo passa a ser "novo" (incluindo um registro)*/
 			modo = "novo";
+			lblModo.Text = "MODO: NOVO";
 		}
 		/* Criando metodo limpar campos, para que todas as vezes 
 		 * que for necessário limpar nao sera necessario repetir o
@@ -139,6 +141,7 @@ namespace Sistema_Loja
 					USU.email = txtEmail.Text;
 					USU.cadastro = System.DateTime.Now;
 					USU.senha = txtSenha.Text;
+					USU.cod_usuario = int.Parse(lblCodigo.Text);
 					if (cboSituacao.Text == "Ativo")
 					{
 						USU.situacao = "A";
@@ -174,12 +177,81 @@ namespace Sistema_Loja
 					MessageBox.Show("Erro inesperado" + ex.Message);
 				}
 			}
-			modo = "";
+			
+
+			/*após clicar num usuário e então em editar*/
+			if (modo == "altera")
+			{
+				/*tratamento de erros, exibe msg*/
+				try
+				{
+					/* Objeto USU */
+					usuario_DTO USU = new usuario_DTO();
+					USU.nome = txtNome.Text;
+					USU.login = txtLogin.Text;
+					USU.email = txtEmail.Text;
+					USU.cadastro = System.DateTime.Now;
+					USU.senha = txtSenha.Text;
+					USU.cod_usuario = int.Parse(lblCodigo.Text);
+					if (cboSituacao.Text == "Ativo")
+					{
+						USU.situacao = "A";
+					}
+					else
+					{
+						USU.situacao = "I";
+					}
+					switch (cboPerfil.Text)
+					{
+						case "Administrador":
+							USU.perfil = 1;
+							break;
+						case "Operador":
+							USU.perfil = 2;
+							break;
+						case "Gerencial":
+							USU.perfil = 3;
+							break;
+					}
+
+					/*método edita usuário na classe BLL*/
+					int x = new UsuarioBLL().editaUsuario(USU);
+					if (x > 0)
+					{
+						MessageBox.Show("Editado com Sucesso!");
+					}
+					else
+					{
+						MessageBox.Show("Nada foi alterado!");
+					}
+					/*Recarrega o Grid*/
+					carregaGrid();
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show("Erro inesperado" + ex.Message);
+				}
+
+			}
+			
 		}
 
 		private void btnEditar_Click(object sender, EventArgs e)
 		{
 			modo = "altera";
+			lblModo.Text = "MODO: EDITAR";
+
+		}
+
+		private void btnCancelar_Click(object sender, EventArgs e)
+		{
+			modo = "cancela";
+			lblModo.Text = "MODO: CANCELAR";
+		}
+
+		private void lblCodigo_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
