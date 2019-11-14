@@ -274,8 +274,8 @@ namespace Sistema_Loja
 
 		private void btnCancelar_Click(object sender, EventArgs e)
 		{
-			modo = "cancela";
-			lblModo.Text = "MODO: CANCELAR";
+			modo = "";
+			lblModo.Text = "MODO:";
 		}
 
 		private void lblCodigo_Click(object sender, EventArgs e)
