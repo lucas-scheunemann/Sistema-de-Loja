@@ -118,5 +118,55 @@ namespace Sistema_Loja
 			cboPerfil.Text = "";
 			cboSituacao.Text = "";
 		}
+
+		private void btnConfirmar_Click(object sender, EventArgs e)
+		{
+			if (modo == "novo")
+			{
+				/*tratamento de erros, exibe msg*/
+				try
+				{
+					/* Objeto USU */
+					usuario_DTO USU = new usuario_DTO();
+					USU.nome = txtNome.Text;
+					USU.login = txtLogin.Text;
+					USU.email = txtEmail.Text;
+					USU.cadastro = System.DateTime.Now;
+					USU.senha = txtSenha.Text;
+					if (cboSituacao.Text == "Ativo")
+					{
+						USU.situacao = "A";
+					}
+					else
+					{
+						USU.situacao = "I";
+					}
+					switch (cboPerfil.Text)
+					{
+						case "Administrador":
+							USU.perfil = 1;
+							break;
+						case "Operador":
+							USU.perfil = 2;
+							break;
+						case "Gerencial":
+							USU.perfil = 3;
+							break;
+					}
+
+					/*método insere usuário na classe UsuarioBLL*/
+					int x = new UsuarioBLL().insereUsuario(USU);
+					if (x > 0)
+					{
+						MessageBox.Show("Gravado com Sucesso!");
+					}
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show("Erro inesperado" + ex.Message);
+				}
+			}
+			modo = "";
+		}
 	}
 }

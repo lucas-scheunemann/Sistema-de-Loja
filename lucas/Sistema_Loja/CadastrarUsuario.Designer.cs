@@ -127,7 +127,7 @@
 			// 
 			this.txtLogin.Location = new System.Drawing.Point(61, 95);
 			this.txtLogin.Name = "txtLogin";
-			this.txtLogin.Size = new System.Drawing.Size(100, 20);
+			this.txtLogin.Size = new System.Drawing.Size(170, 20);
 			this.txtLogin.TabIndex = 8;
 			// 
 			// txtEmail
@@ -141,7 +141,7 @@
 			// 
 			this.txtSenha.Location = new System.Drawing.Point(61, 146);
 			this.txtSenha.Name = "txtSenha";
-			this.txtSenha.Size = new System.Drawing.Size(100, 20);
+			this.txtSenha.Size = new System.Drawing.Size(170, 20);
 			this.txtSenha.TabIndex = 10;
 			this.txtSenha.UseSystemPasswordChar = true;
 			// 
@@ -149,7 +149,7 @@
 			// 
 			this.txtCadastro.Location = new System.Drawing.Point(61, 172);
 			this.txtCadastro.Name = "txtCadastro";
-			this.txtCadastro.Size = new System.Drawing.Size(100, 20);
+			this.txtCadastro.Size = new System.Drawing.Size(170, 20);
 			this.txtCadastro.TabIndex = 11;
 			// 
 			// cboSituacao
@@ -160,7 +160,7 @@
             "Inativo"});
 			this.cboSituacao.Location = new System.Drawing.Point(61, 197);
 			this.cboSituacao.Name = "cboSituacao";
-			this.cboSituacao.Size = new System.Drawing.Size(101, 21);
+			this.cboSituacao.Size = new System.Drawing.Size(128, 21);
 			this.cboSituacao.TabIndex = 12;
 			// 
 			// cboPerfil
@@ -172,7 +172,7 @@
             "Gerencial"});
 			this.cboPerfil.Location = new System.Drawing.Point(61, 222);
 			this.cboPerfil.Name = "cboPerfil";
-			this.cboPerfil.Size = new System.Drawing.Size(101, 21);
+			this.cboPerfil.Size = new System.Drawing.Size(128, 21);
 			this.cboPerfil.TabIndex = 13;
 			// 
 			// dataGridView1
@@ -199,61 +199,72 @@
 			// 
 			// btnNovo
 			// 
+			this.btnNovo.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnNovo.Location = new System.Drawing.Point(12, 42);
+			this.btnNovo.Location = new System.Drawing.Point(8, 42);
 			this.btnNovo.Name = "btnNovo";
 			this.btnNovo.Size = new System.Drawing.Size(60, 23);
 			this.btnNovo.TabIndex = 16;
 			this.btnNovo.Text = "NOVO";
-			this.btnNovo.UseVisualStyleBackColor = true;
+			this.btnNovo.UseVisualStyleBackColor = false;
 			this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
 			// 
 			// btnEditar
 			// 
+			this.btnEditar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnEditar.Location = new System.Drawing.Point(78, 42);
+			this.btnEditar.Location = new System.Drawing.Point(74, 42);
 			this.btnEditar.Name = "btnEditar";
 			this.btnEditar.Size = new System.Drawing.Size(65, 23);
 			this.btnEditar.TabIndex = 17;
 			this.btnEditar.Text = "EDITAR";
-			this.btnEditar.UseVisualStyleBackColor = true;
+			this.btnEditar.UseVisualStyleBackColor = false;
 			// 
 			// btnDeletar
 			// 
+			this.btnDeletar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.btnDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnDeletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnDeletar.Location = new System.Drawing.Point(145, 42);
 			this.btnDeletar.Name = "btnDeletar";
-			this.btnDeletar.Size = new System.Drawing.Size(72, 23);
+			this.btnDeletar.Size = new System.Drawing.Size(86, 23);
 			this.btnDeletar.TabIndex = 18;
 			this.btnDeletar.Text = "DELETAR";
-			this.btnDeletar.UseVisualStyleBackColor = true;
+			this.btnDeletar.UseVisualStyleBackColor = false;
 			this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
 			// 
 			// btnCancelar
 			// 
+			this.btnCancelar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnCancelar.Location = new System.Drawing.Point(223, 42);
+			this.btnCancelar.Location = new System.Drawing.Point(236, 42);
 			this.btnCancelar.Name = "btnCancelar";
-			this.btnCancelar.Size = new System.Drawing.Size(80, 23);
+			this.btnCancelar.Size = new System.Drawing.Size(90, 23);
 			this.btnCancelar.TabIndex = 19;
 			this.btnCancelar.Text = "CANCELAR";
-			this.btnCancelar.UseVisualStyleBackColor = true;
+			this.btnCancelar.UseVisualStyleBackColor = false;
 			// 
 			// btnConfirmar
 			// 
+			this.btnConfirmar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnConfirmar.Location = new System.Drawing.Point(309, 42);
+			this.btnConfirmar.Location = new System.Drawing.Point(332, 42);
 			this.btnConfirmar.Name = "btnConfirmar";
-			this.btnConfirmar.Size = new System.Drawing.Size(88, 23);
+			this.btnConfirmar.Size = new System.Drawing.Size(94, 23);
 			this.btnConfirmar.TabIndex = 20;
 			this.btnConfirmar.Text = "CONFIRMAR";
-			this.btnConfirmar.UseVisualStyleBackColor = true;
+			this.btnConfirmar.UseVisualStyleBackColor = false;
+			this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
 			// 
 			// CadastrarUsuario
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(409, 460);
+			this.ClientSize = new System.Drawing.Size(438, 460);
 			this.Controls.Add(this.btnConfirmar);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnDeletar);
