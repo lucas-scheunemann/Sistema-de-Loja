@@ -30,10 +30,8 @@
 		{
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.button1 = new System.Windows.Forms.Button();
@@ -42,6 +40,8 @@
 			this.button4 = new System.Windows.Forms.Button();
 			this.button5 = new System.Windows.Forms.Button();
 			this.lblModo = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.lblCodigo = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -59,27 +59,17 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(56, 84);
+			this.label2.Location = new System.Drawing.Point(56, 101);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(50, 16);
 			this.label2.TabIndex = 1;
 			this.label2.Text = "nome:";
 			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(46, 107);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(60, 16);
-			this.label3.TabIndex = 2;
-			this.label3.Text = "código:";
-			// 
 			// label4
 			// 
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(31, 132);
+			this.label4.Location = new System.Drawing.Point(31, 128);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(75, 16);
 			this.label4.TabIndex = 3;
@@ -87,21 +77,14 @@
 			// 
 			// textBox1
 			// 
-			this.textBox1.Location = new System.Drawing.Point(112, 132);
+			this.textBox1.Location = new System.Drawing.Point(112, 128);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(199, 20);
 			this.textBox1.TabIndex = 4;
 			// 
-			// textBox2
-			// 
-			this.textBox2.Location = new System.Drawing.Point(112, 106);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(199, 20);
-			this.textBox2.TabIndex = 5;
-			// 
 			// textBox3
 			// 
-			this.textBox3.Location = new System.Drawing.Point(112, 80);
+			this.textBox3.Location = new System.Drawing.Point(112, 97);
 			this.textBox3.Name = "textBox3";
 			this.textBox3.Size = new System.Drawing.Size(364, 20);
 			this.textBox3.TabIndex = 6;
@@ -178,11 +161,32 @@
 			this.lblModo.TabIndex = 13;
 			this.lblModo.Text = "MODO:";
 			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(56, 78);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(53, 13);
+			this.label3.TabIndex = 14;
+			this.label3.Text = "código: ";
+			// 
+			// lblCodigo
+			// 
+			this.lblCodigo.AutoSize = true;
+			this.lblCodigo.Location = new System.Drawing.Point(112, 78);
+			this.lblCodigo.Name = "lblCodigo";
+			this.lblCodigo.Size = new System.Drawing.Size(13, 13);
+			this.lblCodigo.TabIndex = 15;
+			this.lblCodigo.Text = "0";
+			// 
 			// CadastrarProduto
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(512, 398);
+			this.Controls.Add(this.lblCodigo);
+			this.Controls.Add(this.label3);
 			this.Controls.Add(this.lblModo);
 			this.Controls.Add(this.button5);
 			this.Controls.Add(this.button4);
@@ -191,10 +195,8 @@
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.dataGridView1);
 			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.label4);
-			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Name = "CadastrarProduto";
@@ -209,10 +211,8 @@
 
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button button1;
@@ -221,5 +221,7 @@
 		private System.Windows.Forms.Button button4;
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.Label lblModo;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label lblCodigo;
 	}
 }
