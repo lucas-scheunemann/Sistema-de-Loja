@@ -16,3 +16,4 @@ C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\bin\Debug\Loja.DAL.dll
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\bin\Debug\Loja.DAL.pdb
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\bin\Debug\Loja.DAL.dll.config
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.CadastrarProduto.resources

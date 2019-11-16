@@ -21,7 +21,9 @@ namespace Sistema_Loja
 
 		private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-
+			Form childForm = new CadastrarProduto();
+			childForm.MdiParent = this;
+			childForm.Show();
 		}
 
 		private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -29,6 +31,11 @@ namespace Sistema_Loja
 			Form childForm = new CadastrarUsuario();
 			childForm.MdiParent = this;
 			childForm.Show();
+
+		}
+
+		private void saidaToolStripMenuItem_Click(object sender, EventArgs e)
+		{
 
 		}
 	}

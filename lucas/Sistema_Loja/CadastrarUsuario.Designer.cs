@@ -241,7 +241,7 @@
 			// 
 			// btnCancelar
 			// 
-			this.btnCancelar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.btnCancelar.BackColor = System.Drawing.Color.Red;
 			this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnCancelar.Location = new System.Drawing.Point(236, 42);
@@ -254,7 +254,7 @@
 			// 
 			// btnConfirmar
 			// 
-			this.btnConfirmar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.btnConfirmar.BackColor = System.Drawing.Color.GreenYellow;
 			this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnConfirmar.Location = new System.Drawing.Point(332, 42);
