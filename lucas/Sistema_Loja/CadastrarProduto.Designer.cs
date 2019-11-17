@@ -34,11 +34,11 @@
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
-			this.button5 = new System.Windows.Forms.Button();
+			this.btnNovo = new System.Windows.Forms.Button();
+			this.btnEditar = new System.Windows.Forms.Button();
+			this.btnDeletar = new System.Windows.Forms.Button();
+			this.btnCancelar = new System.Windows.Forms.Button();
+			this.btnConfirmar = new System.Windows.Forms.Button();
 			this.lblModo = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.lblCodigo = new System.Windows.Forms.Label();
@@ -97,60 +97,64 @@
 			this.dataGridView1.Size = new System.Drawing.Size(477, 177);
 			this.dataGridView1.TabIndex = 7;
 			// 
-			// button1
+			// btnNovo
 			// 
-			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.Location = new System.Drawing.Point(12, 42);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(85, 23);
-			this.button1.TabIndex = 8;
-			this.button1.Text = "NOVO";
-			this.button1.UseVisualStyleBackColor = true;
+			this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnNovo.Location = new System.Drawing.Point(12, 42);
+			this.btnNovo.Name = "btnNovo";
+			this.btnNovo.Size = new System.Drawing.Size(85, 23);
+			this.btnNovo.TabIndex = 8;
+			this.btnNovo.Text = "NOVO";
+			this.btnNovo.UseVisualStyleBackColor = true;
+			this.btnNovo.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// button2
+			// btnEditar
 			// 
-			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.Location = new System.Drawing.Point(103, 42);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(85, 23);
-			this.button2.TabIndex = 9;
-			this.button2.Text = "EDITAR";
-			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.button2_Click);
+			this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnEditar.Location = new System.Drawing.Point(103, 42);
+			this.btnEditar.Name = "btnEditar";
+			this.btnEditar.Size = new System.Drawing.Size(85, 23);
+			this.btnEditar.TabIndex = 9;
+			this.btnEditar.Text = "EDITAR";
+			this.btnEditar.UseVisualStyleBackColor = true;
+			this.btnEditar.Click += new System.EventHandler(this.button2_Click);
 			// 
-			// button3
+			// btnDeletar
 			// 
-			this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button3.Location = new System.Drawing.Point(194, 42);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(85, 23);
-			this.button3.TabIndex = 10;
-			this.button3.Text = "DELETAR";
-			this.button3.UseVisualStyleBackColor = true;
+			this.btnDeletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnDeletar.Location = new System.Drawing.Point(194, 42);
+			this.btnDeletar.Name = "btnDeletar";
+			this.btnDeletar.Size = new System.Drawing.Size(85, 23);
+			this.btnDeletar.TabIndex = 10;
+			this.btnDeletar.Text = "DELETAR";
+			this.btnDeletar.UseVisualStyleBackColor = true;
+			this.btnDeletar.Click += new System.EventHandler(this.button3_Click);
 			// 
-			// button4
+			// btnCancelar
 			// 
-			this.button4.BackColor = System.Drawing.Color.Red;
-			this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button4.Location = new System.Drawing.Point(302, 42);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(85, 23);
-			this.button4.TabIndex = 11;
-			this.button4.Text = "CANCELAR";
-			this.button4.UseVisualStyleBackColor = false;
+			this.btnCancelar.BackColor = System.Drawing.Color.Red;
+			this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCancelar.Location = new System.Drawing.Point(302, 42);
+			this.btnCancelar.Name = "btnCancelar";
+			this.btnCancelar.Size = new System.Drawing.Size(85, 23);
+			this.btnCancelar.TabIndex = 11;
+			this.btnCancelar.Text = "CANCELAR";
+			this.btnCancelar.UseVisualStyleBackColor = false;
+			this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
 			// 
-			// button5
+			// btnConfirmar
 			// 
-			this.button5.BackColor = System.Drawing.Color.GreenYellow;
-			this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button5.Location = new System.Drawing.Point(393, 42);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(96, 23);
-			this.button5.TabIndex = 12;
-			this.button5.Text = "CONFIRMAR";
-			this.button5.UseVisualStyleBackColor = false;
+			this.btnConfirmar.BackColor = System.Drawing.Color.GreenYellow;
+			this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnConfirmar.Location = new System.Drawing.Point(393, 42);
+			this.btnConfirmar.Name = "btnConfirmar";
+			this.btnConfirmar.Size = new System.Drawing.Size(96, 23);
+			this.btnConfirmar.TabIndex = 12;
+			this.btnConfirmar.Text = "CONFIRMAR";
+			this.btnConfirmar.UseVisualStyleBackColor = false;
+			this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
 			// 
 			// lblModo
 			// 
@@ -188,11 +192,11 @@
 			this.Controls.Add(this.lblCodigo);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.lblModo);
-			this.Controls.Add(this.button5);
-			this.Controls.Add(this.button4);
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
+			this.Controls.Add(this.btnConfirmar);
+			this.Controls.Add(this.btnCancelar);
+			this.Controls.Add(this.btnDeletar);
+			this.Controls.Add(this.btnEditar);
+			this.Controls.Add(this.btnNovo);
 			this.Controls.Add(this.dataGridView1);
 			this.Controls.Add(this.textBox3);
 			this.Controls.Add(this.textBox1);
@@ -201,6 +205,7 @@
 			this.Controls.Add(this.label1);
 			this.Name = "CadastrarProduto";
 			this.Text = "CadastrarProduto";
+			this.Load += new System.EventHandler(this.CadastrarProduto_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -215,11 +220,11 @@
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.DataGridView dataGridView1;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.Button button4;
-		private System.Windows.Forms.Button button5;
+		private System.Windows.Forms.Button btnNovo;
+		private System.Windows.Forms.Button btnEditar;
+		private System.Windows.Forms.Button btnDeletar;
+		private System.Windows.Forms.Button btnCancelar;
+		private System.Windows.Forms.Button btnConfirmar;
 		private System.Windows.Forms.Label lblModo;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label lblCodigo;
