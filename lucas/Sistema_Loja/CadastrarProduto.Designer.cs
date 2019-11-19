@@ -31,8 +31,8 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.txtPreco = new System.Windows.Forms.TextBox();
+			this.txtNome = new System.Windows.Forms.TextBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.btnNovo = new System.Windows.Forms.Button();
 			this.btnEditar = new System.Windows.Forms.Button();
@@ -75,27 +75,30 @@
 			this.label4.TabIndex = 3;
 			this.label4.Text = "preço: R$";
 			// 
-			// textBox1
+			// txtPreco
 			// 
-			this.textBox1.Location = new System.Drawing.Point(112, 128);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(199, 20);
-			this.textBox1.TabIndex = 4;
+			this.txtPreco.Location = new System.Drawing.Point(112, 128);
+			this.txtPreco.Name = "txtPreco";
+			this.txtPreco.Size = new System.Drawing.Size(199, 20);
+			this.txtPreco.TabIndex = 4;
 			// 
-			// textBox3
+			// txtNome
 			// 
-			this.textBox3.Location = new System.Drawing.Point(112, 97);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(364, 20);
-			this.textBox3.TabIndex = 6;
+			this.txtNome.Location = new System.Drawing.Point(112, 97);
+			this.txtNome.Name = "txtNome";
+			this.txtNome.Size = new System.Drawing.Size(364, 20);
+			this.txtNome.TabIndex = 6;
 			// 
 			// dataGridView1
 			// 
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Location = new System.Drawing.Point(12, 209);
 			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.ReadOnly = true;
+			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dataGridView1.Size = new System.Drawing.Size(477, 177);
 			this.dataGridView1.TabIndex = 7;
+			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
 			// 
 			// btnNovo
 			// 
@@ -198,8 +201,8 @@
 			this.Controls.Add(this.btnEditar);
 			this.Controls.Add(this.btnNovo);
 			this.Controls.Add(this.dataGridView1);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.txtNome);
+			this.Controls.Add(this.txtPreco);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
@@ -217,8 +220,8 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.TextBox txtPreco;
+		private System.Windows.Forms.TextBox txtNome;
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button btnNovo;
 		private System.Windows.Forms.Button btnEditar;

@@ -55,6 +55,16 @@ namespace Sistema_Loja
 		{
 			modo = "NOVO";
 			lblModo.Text = "MODO: NOVO";
+
+			/*limpa camos para inserção de novas variáveis*/
+			limpar_campos();
+		}
+
+		private void limpar_campos()
+		{
+			txtNome.Text = "";
+			txtPreco.Text = "";
+			lblCodigo.Text = "0";
 		}
 
 		private void button3_Click(object sender, EventArgs e)
@@ -73,6 +83,29 @@ namespace Sistema_Loja
 		{
 			/*aqui ficarão as funções do funcionamento do sistema, dependendo de qual
 			 modo o sistema se encontra*/
+			if (modo == "NOVO")
+			{
+			}
+			if (modo == "DELETAR")
+			{
+			}
+			if (modo == "EDITAR")
+			{
+			}
+
+			carregaGrid();
+		}
+
+		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+			/*linha selecionada atualmente aparecerá nos campos acima do grid*/
+			int sel = dataGridView1.CurrentRow.Index;
+
+			/*valor de cada coluna será jogada em cada textBox e no label código*/
+
+			txtNome.Text = Convert.ToString(dataGridView1["nome", sel].Value);
+			txtPreco.Text = Convert.ToString(dataGridView1["preco", sel].Value);
+			lblCodigo.Text = Convert.ToString(dataGridView1["cod_produto", sel].Value);
 		}
 	}
 }
