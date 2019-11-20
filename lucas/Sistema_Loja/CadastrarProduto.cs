@@ -85,12 +85,58 @@ namespace Sistema_Loja
 			 modo o sistema se encontra*/
 			if (modo == "NOVO")
 			{
+				try
+				{
+					/* objeto produto PDT */
+					produto_DTO PDT = new produto_DTO();
+					PDT.nome = txtNome.Text;
+					PDT.preco = double.Parse(txtPreco.Text);
+					PDT.quantidade = 0;
+
+					/*  método insereProduto em ProdutoBLL */
+					int x = new ProdutoBLL().insereProduto(PDT);
+					if (x > 0)
+					{
+						MessageBox.Show("gravado com sucesso!");
+					}
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show("Erro inesperado, ", ex.Message);
+				}
 			}
 			if (modo == "DELETAR")
 			{
+				try
+				{
+					
+
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show("Erro inesperado, ", ex.Message);
+				}
 			}
 			if (modo == "EDITAR")
 			{
+				try
+				{
+					/*Objeto Produto PDT*/
+					produto_DTO PDT = new produto_DTO();
+					PDT.nome = txtNome.Text;
+					PDT.preco = double.Parse(txtPreco.Text);
+					PDT.cod_produto = int.Parse(lblCodigo.Text);
+
+					int x = new ProdutoBLL().editaProduto(PDT);
+					if (x > 0)
+					{
+						MessageBox.Show("editado com sucesso!");
+					}
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show("Erro inesperado, ", ex.Message);
+				}
 			}
 
 			carregaGrid();
