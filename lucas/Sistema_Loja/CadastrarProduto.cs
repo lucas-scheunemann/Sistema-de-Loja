@@ -109,7 +109,16 @@ namespace Sistema_Loja
 			{
 				try
 				{
-					
+					/*objeto produto PDT
+					 Para deletar, só precisa identificar o cod_produto, que é identidade*/
+					produto_DTO PDT = new produto_DTO();
+					PDT.cod_produto = int.Parse(lblCodigo.Text);
+
+					int x = new ProdutoBLL().deletaProduto(PDT);
+					if (x > 0)
+					{
+						MessageBox.Show("Deletado com sucesso!");
+					}
 
 				}
 				catch (Exception ex)

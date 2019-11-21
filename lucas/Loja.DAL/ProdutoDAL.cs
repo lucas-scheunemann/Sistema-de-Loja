@@ -74,6 +74,7 @@ namespace Loja.DAL
 				CM.CommandType = System.Data.CommandType.Text;
 				CM.CommandText = "INSERT INTO tb_produtos (nome, preco, quantidade) VALUES " +
 					"(@nome, @preco, @quantidade)";
+
 				CM.Parameters.Add("nome", System.Data.SqlDbType.NVarChar).Value = PDT.nome;
 				CM.Parameters.Add("preco", System.Data.SqlDbType.Money).Value = PDT.preco;
 				CM.Parameters.Add("quantidade", System.Data.SqlDbType.Int).Value = PDT.quantidade;
@@ -105,6 +106,7 @@ namespace Loja.DAL
 				CM.CommandText = "UPDATE tb_produtos SET " +
 					"nome = @nome, preco = @preco WHERE " +
 					"cod_produto = @cod_produto";
+
 				CM.Parameters.Add("nome", System.Data.SqlDbType.NVarChar).Value = PDT.nome;
 				CM.Parameters.Add("preco", System.Data.SqlDbType.Money).Value = PDT.preco;
 				CM.Parameters.Add("cod_produto", System.Data.SqlDbType.Int).Value = PDT.cod_produto;
@@ -123,7 +125,27 @@ namespace Loja.DAL
 		}
 		public int deletaProduto(produto_DTO PDT)
 		{
-			return 0;
+			try
+			{
+				SqlConnection CON = new SqlConnection();
+				CON.ConnectionString = Properties.Settings.Default.CST;
+				SqlCommand CM = new SqlCommand();
+				CM.CommandType = System.Data.CommandType.Text;
+				CM.CommandText = "DELETE tb_produtos WHERE " +
+					"cod_produto = @cod_produto;";
+
+				CM.Parameters.Add("cod_produto", System.Data.SqlDbType.Int).Value = PDT.cod_produto;
+
+				CM.Connection = CON;
+
+				CON.Open();
+				int qtd = CM.ExecuteNonQuery();
+				return qtd;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
 		}
 	}
 }
