@@ -58,6 +58,12 @@
     <Compile Include="CadastrarUsuario.Designer.cs">
       <DependentUpon>CadastrarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="EntradaEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntradaEstoque.Designer.cs">
+      <DependentUpon>EntradaEstoque.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDIParent1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrarUsuario.resx">
       <DependentUpon>CadastrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntradaEstoque.resx">
+      <DependentUpon>EntradaEstoque.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParent1.resx">
       <DependentUpon>MDIParent1.cs</DependentUpon>

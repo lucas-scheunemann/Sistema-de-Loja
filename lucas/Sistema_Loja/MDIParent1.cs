@@ -38,5 +38,12 @@ namespace Sistema_Loja
 		{
 
 		}
+
+		private void entradaToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form childForm = new EntradaEstoque();
+			childForm.MdiParent = this;
+			childForm.Show();
+		}
 	}
 }

@@ -60,6 +60,34 @@ namespace Loja.DAL
 				throw ex;
 			}
 		}
+
+		public int addQuantidade(produto_DTO PDT)
+		{
+			try
+			{
+				SqlConnection CON = new SqlConnection();
+				CON.ConnectionString = Properties.Settings.Default.CST;
+				SqlCommand CM = new SqlCommand();
+				CM.CommandType = System.Data.CommandType.Text;
+				CM.CommandText = "UPDATE tb_produtos SET " +
+					"quantidade = @quantidade WHERE " +
+					"cod_produto = @cod_produto;";
+				CM.Parameters.Add("quantidade", System.Data.SqlDbType.Int).Value = PDT.quantidade;
+				CM.Parameters.Add("cod_produto", System.Data.SqlDbType.Int).Value = PDT.cod_produto;
+
+				CM.Connection = CON;
+
+				CON.Open();
+				int qtd = CM.ExecuteNonQuery();
+				return qtd;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+			
+		}
+
 		public int insereProduto(produto_DTO PDT)
 		{
 			try
