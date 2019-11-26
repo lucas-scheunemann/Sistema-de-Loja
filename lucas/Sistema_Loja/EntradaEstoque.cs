@@ -59,12 +59,19 @@ namespace Sistema_Loja
 				/* objeto produto PDT */
 				produto_DTO PDT = new produto_DTO();
 				PDT.cod_produto = int.Parse(lblCodigo.Text);
-				PDT.quantidade = int.Parse(txtQuantidade.Text) + int.Parse(lblQuantidade.Text);
-				/*  método insereProduto em ProdutoBLL */
-				int x = new ProdutoBLL().addQuantidade(PDT);
-				if (x > 0)
+				if (int.Parse(txtQuantidade.Text) <= 0)
 				{
-					MessageBox.Show("gravado com sucesso!");
+					MessageBox.Show("valor inválido");
+				}
+				else
+				{
+					PDT.quantidade = int.Parse(txtQuantidade.Text) + int.Parse(lblQuantidade.Text);
+					/*  método insereProduto em ProdutoBLL */
+					int x = new ProdutoBLL().addQuantidade(PDT);
+					if (x > 0)
+					{
+						MessageBox.Show("gravado com sucesso!");
+					}
 				}
 			}
 			catch (Exception ex)

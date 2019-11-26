@@ -72,5 +72,17 @@ namespace Loja.BLL
 				throw ex;
 			}
 		}
+
+		public int retiraQuantidade(produto_DTO PDT)
+		{
+			try
+			{
+				return new ProdutoDAL().retiraQuantidade(PDT);
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
 	}
 }

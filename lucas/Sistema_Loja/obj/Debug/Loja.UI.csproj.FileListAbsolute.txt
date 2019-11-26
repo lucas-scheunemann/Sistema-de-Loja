@@ -18,3 +18,4 @@ C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\bin
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\bin\Debug\Loja.DAL.dll.config
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.CadastrarProduto.resources
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.EntradaEstoque.resources
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.SaidaEstoque.resources

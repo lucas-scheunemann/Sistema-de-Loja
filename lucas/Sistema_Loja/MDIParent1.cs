@@ -36,7 +36,9 @@ namespace Sistema_Loja
 
 		private void saidaToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-
+			Form childForm = new SaidaEstoque();
+			childForm.MdiParent = this;
+			childForm.Show();
 		}
 
 		private void entradaToolStripMenuItem_Click(object sender, EventArgs e)
