@@ -92,14 +92,14 @@
 			// entradaToolStripMenuItem
 			// 
 			this.entradaToolStripMenuItem.Name = "entradaToolStripMenuItem";
-			this.entradaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.entradaToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
 			this.entradaToolStripMenuItem.Text = "Entrada";
 			this.entradaToolStripMenuItem.Click += new System.EventHandler(this.entradaToolStripMenuItem_Click);
 			// 
 			// saidaToolStripMenuItem
 			// 
 			this.saidaToolStripMenuItem.Name = "saidaToolStripMenuItem";
-			this.saidaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.saidaToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
 			this.saidaToolStripMenuItem.Text = "Saida";
 			this.saidaToolStripMenuItem.Click += new System.EventHandler(this.saidaToolStripMenuItem_Click);
 			// 
@@ -116,6 +116,7 @@
 			this.informaçõesDoSistemaToolStripMenuItem.Name = "informaçõesDoSistemaToolStripMenuItem";
 			this.informaçõesDoSistemaToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
 			this.informaçõesDoSistemaToolStripMenuItem.Text = "Informações do Sistema";
+			this.informaçõesDoSistemaToolStripMenuItem.Click += new System.EventHandler(this.informaçõesDoSistemaToolStripMenuItem_Click);
 			// 
 			// statusStrip
 			// 

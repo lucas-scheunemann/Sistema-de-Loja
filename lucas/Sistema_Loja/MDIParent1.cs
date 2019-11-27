@@ -47,5 +47,12 @@ namespace Sistema_Loja
 			childForm.MdiParent = this;
 			childForm.Show();
 		}
+
+		private void informaçõesDoSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form childForm = new InformacaoDoSistema();
+			childForm.MdiParent = this;
+			childForm.Show();
+		}
 	}
 }

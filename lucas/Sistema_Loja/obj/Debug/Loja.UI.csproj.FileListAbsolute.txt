@@ -19,3 +19,4 @@ C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\bin
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.CadastrarProduto.resources
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.EntradaEstoque.resources
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.SaidaEstoque.resources
+C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Sistema_Loja\obj\Debug\Sistema_Loja.InformacaoDoSistema.resources
