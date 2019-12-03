@@ -3,3 +3,8 @@ C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.DTO\bin\Deb
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.DTO\obj\Debug\Loja.DTO.csprojAssemblyReference.cache
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.DTO\obj\Debug\Loja.DTO.dll
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.DTO\obj\Debug\Loja.DTO.pdb
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.DTO\bin\Debug\Loja.DTO.dll
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.DTO\bin\Debug\Loja.DTO.pdb
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.DTO\obj\Debug\Loja.DTO.csprojAssemblyReference.cache
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.DTO\obj\Debug\Loja.DTO.dll
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.DTO\obj\Debug\Loja.DTO.pdb

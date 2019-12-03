@@ -26,7 +26,7 @@ namespace Loja.DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-HN3PTE5;Initial Catalog=Loja;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-02RD21U;Initial Catalog=Loja;Integrated Security=True")]
         public string CST {
             get {
                 return ((string)(this["CST"]));

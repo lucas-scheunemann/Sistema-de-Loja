@@ -9,3 +9,14 @@ C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.BLL\obj\Deb
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.BLL\obj\Debug\Loja.BLL.dll
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.BLL\obj\Debug\Loja.BLL.pdb
 C:\Users\lucas\Documents\PC\FACULDADE\CURSOS ONLINE\C#_avancado\Loja.BLL\bin\Debug\Loja.DAL.dll.config
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.BLL\bin\Debug\Loja.BLL.dll
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.BLL\bin\Debug\Loja.BLL.pdb
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.BLL\bin\Debug\Loja.DAL.dll
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.BLL\bin\Debug\Loja.DTO.dll
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.BLL\bin\Debug\Loja.DAL.pdb
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.BLL\bin\Debug\Loja.DAL.dll.config
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.BLL\bin\Debug\Loja.DTO.pdb
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.BLL\obj\Debug\Loja.BLL.csprojAssemblyReference.cache
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.BLL\obj\Debug\Loja.BLL.csproj.CopyComplete
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.BLL\obj\Debug\Loja.BLL.dll
+C:\Users\lucas\Documents\GitHub\Sistema-de-Loja\lucas\Loja.BLL\obj\Debug\Loja.BLL.pdb
